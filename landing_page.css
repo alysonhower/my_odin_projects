@@ -1,32 +1,31 @@
 @font-face {
-    font-family: 'silkscreenregular';
-    src: url('silkscreen-regular-webfont.woff2') format('woff2'),
-         url('silkscreen-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: hemi;
+    src: url("./hemi\ head\ bd\ it.ttf");
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-image: ; */
-  /* background-color: #333568; */
   color: #fe5ab4;
   background-color: #2c3967;
-  text-shadow:
-    0 0 1px #fe5ab4,
-    0 0 2px #fe5ab4,
-    0 0 4px #fe5ab4;
+  /* text-shadow: */
+  /*   0 0 1px #fe5ab4, */
+  /*   0 0 2px #fe5ab4, */
+  /*   0 0 3px #fe5ab4; */
 }
 
 body {
-  font-family: 'silkscreenregular';
+  font-family: 'hemi';
+  font-size: 18px;
 }
 
 header {
   margin: 0px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -39,17 +38,29 @@ nav ol {
 }
 
 main {
-  padding: 10px;
   margin: 10px;
+  padding: 50px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 
-main h1 {
-
+main h2 {
   color: #57feff;
   text-shadow:
     0 0 1px #57feff,
-    0 0 2px #57feff,
-    0 0 4px #57feff;
+/*     0 0 4px #57feff, */
+    0 0 50px #57feff;
+}
+
+.sessionText {
+  width: 350px;
+}
+
+.sessionImage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 10px;
 }
