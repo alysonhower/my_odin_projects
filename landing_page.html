@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Project: Landing Page</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./landing_page.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Music Player</title>
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="./landing_page.css">
 </head>
 
 <body>
@@ -23,14 +27,36 @@
     <div class="sessionText">
       <h2>Future is an analog arcade trip down the neon space beach</h2>
       <br>
-      <p>Synthwave is a musical and aesthetic micro niche with origins in the mid-2000s with influences from movie
+      <p>Synthwave is a musical and aesthetic niche with origins in the mid-2000s with influences from movie
         soundtracks, video games and television between the 80s and 90s.</p>
     </div>
-    <div class="sessionImage">
-      <img src="drive.gif" alt="drive.gif source:https://www.reddit.com/r/outrun/comments/9vo6rj/drive/"
-        style="width:350px">
-      <p>source:https://www.reddit.com/r/outrun/comments/9vo6rj/drive/</p>
+
+    <div class="player">
+      <div class="details">
+        <div class="now-playing">PLAYING x OF y</div>
+        <div class="track-art"></div>
+        <div class="track-name">Track Name</div>
+        <div class="track-artist">Track Artist</div>
+      </div>
+      <div class="buttons">
+        <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+        <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+        <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+      </div>
+      <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+      <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+      </div>
     </div>
+
+    <!-- Load the main script for the player -->
+    <script src="landing_page.js"></script>
 </body>
 
 </html>
