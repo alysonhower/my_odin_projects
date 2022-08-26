@@ -22,22 +22,24 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
   {
-    name: "A.L.Y.S.O.N",
-    artist: "Broke For Free",
-    image: "./drive.gif",
-    path: "./Space_Echo.mp3"
+    name: "Space Echo",
+    artist: "A.L.I.S.O.N",
+    image: "./landin_page/drive.gif",
+    path: "./landin_page/space_echo.mp3"
+    // image source: https://www.reddit.com/r/outrun/comments/9vo6rj/drive/
   },
   {
-    name: "Enthusiast",
-    artist: "Tours",
-    image: "https://images.pexels.com/photos/3100835/pexels-photo-3100835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-    path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
+    name: "Passager",
+    artist: "A.L.I.S.O.N",
+    image: "./landin_page/space_render.gif",
+    path: "./landin_page/passenger.mp3"
+    // image source: https://giphy.com/gifs/cyberpunk-synthwave-retrowave-XZbzPwR07W0DVYmBVx
   },
   {
-    name: "Shipping Lanes",
-    artist: "Chad Crouch",
-    image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-    path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+    name: "Golden Dust",
+    artist: "A.L.I.S.O.N",
+    image: "./landin_page/rainbow_glow.gif",
+    path: "./landin_page/golden_dust.mp3"
   },
 ];
 

@@ -1,9 +1,9 @@
-body {
+/* body { */
   /* background-color: lightgreen; */
 
   /* Smoothly transition the background color */
   /* transition: background-color .5s; */
-}
+/* } */
 
 .player {
   height: 95vh;
