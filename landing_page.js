@@ -24,22 +24,22 @@ let track_list = [
   {
     name: "Space Echo",
     artist: "A.L.I.S.O.N",
-    image: "./landin_page/drive.gif",
-    path: "./landin_page/space_echo.mp3"
+    image: "./landing_page/drive.gif",
+    path: "./landing_page/space_echo.mp3"
     // image source: https://www.reddit.com/r/outrun/comments/9vo6rj/drive/
   },
   {
     name: "Passager",
     artist: "A.L.I.S.O.N",
-    image: "./landin_page/space_render.gif",
-    path: "./landin_page/passenger.mp3"
+    image: "./landing_page/space_render.gif",
+    path: "./landing_page/passenger.mp3"
     // image source: https://giphy.com/gifs/cyberpunk-synthwave-retrowave-XZbzPwR07W0DVYmBVx
   },
   {
     name: "Golden Dust",
     artist: "A.L.I.S.O.N",
-    image: "./landin_page/rainbow_glow.gif",
-    path: "./landin_page/golden_dust.mp3"
+    image: "./landing_page/rainbow_glow.gif",
+    path: "./landing_page/golden_dust.mp3"
   },
 ];
 
