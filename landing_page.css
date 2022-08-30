@@ -6,7 +6,7 @@
 /* } */
 
 .player {
-  height: 95vh;
+  /* height: 95vh; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -169,7 +169,7 @@ nav ol {
   list-style-type: none;
 }
 
-main {
+.sectionOne {
   margin: 10px;
   padding: 50px;
   display: flex;
@@ -186,6 +186,15 @@ main h2 {
     0 0 50px #57feff;
 }
 
-.sessionText {
-  width: 350px;
+.sectionText {
+  width: 450px;
+}
+
+.sectionTwo {
+  padding: 50px;
+  color: #2c3967;
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

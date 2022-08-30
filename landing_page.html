@@ -24,39 +24,60 @@
     </nav>
   </header>
   <main>
-    <div class="sessionText">
-      <h2>Future is an analog arcade trip down the neon space beach</h2>
-      <br>
-      <p>Synthwave is a musical and aesthetic niche with origins in the mid-2000s with influences from movie
-        soundtracks, video games and television between the 80s and 90s.</p>
+    <div class="sectionOne">
+      <div class="sectionText">
+        <h2>Future is an analog arcade trip down the neon space beach</h2>
+        <br>
+        <p>Synthwave is a musical and aesthetic niche with origins in the mid-2000s with influences from movie
+          soundtracks, video games and elevision between the 80s and 90s.</p>
+        <br>
+        <p>Aesthetically, synthwave gained a retrofuturism perspective, being also called retrowave, emulating 80s
+          science
+          fiction and action scenes. Examples of aesthetics seen in movies and video games are: F-Zero, In Time, Blade
+          Runner, Drive, Grand Theft Auto: Vice City, Hotline Miami and Far Cry 3: Blood Dragon.</p>
+        <br>
+        <p>As the genre draws from diverse influences, there is a wide variety of structures used in the songs, allowing
+          artists a wide creative spectrum. This characteristic gave rise to a countless number of subgenres (in some
+          moments, the distinction between them occurs more by differences in aesthetic orientation than by music). Just
+          to the right (or below if you're using a smartphone) you can hear one of my favorite variations: the
+          chillsynth.
+          Please feel free to enjoy the experience through the work of one of the best artists today <a
+            href="https://soundcloud.com/alis_on" class="ALISON">A.L.I.S.O.N</a></p>
+      </div>
+
+      <div class="player">
+        <div class="details">
+          <div class="now-playing">PLAYING x OF y</div>
+          <div class="track-art"></div>
+          <div class="track-name">Track Name</div>
+          <div class="track-artist">Track Artist</div>
+        </div>
+        <div class="buttons">
+          <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+          <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+          <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+        </div>
+        <div class="slider_container">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">00:00</div>
+        </div>
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+      </div>
     </div>
 
-    <div class="player">
-      <div class="details">
-        <div class="now-playing">PLAYING x OF y</div>
-        <div class="track-art"></div>
-        <div class="track-name">Track Name</div>
-        <div class="track-artist">Track Artist</div>
-      </div>
-      <div class="buttons">
-        <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
-        <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
-        <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
-      </div>
-      <div class="slider_container">
-        <div class="current-time">00:00</div>
-        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-        <div class="total-duration">00:00</div>
-      </div>
-      <div class="slider_container">
-        <i class="fa fa-volume-down"></i>
-        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-        <i class="fa fa-volume-up"></i>
-      </div>
+    <div class="sectionTwo">
+      <h1 class="sectionTwo">In the future we will be mechanized humans... or maybe humanized machines... or maybe we
+        will just be information</h1>
     </div>
+  </main>
 
-    <!-- Load the main script for the player -->
-    <script src="landing_page.js"></script>
+  <!-- Load the main script for the player -->
+  <script src="landing_page.js"></script>
 </body>
 
 </html>
