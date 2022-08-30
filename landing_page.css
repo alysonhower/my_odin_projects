@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  margin: 15px;
+  margin: 30px;
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -36,7 +36,8 @@ nav ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
+  text-align: justify;
 }
 
 .title {
@@ -84,6 +85,8 @@ nav ol {
 
 .player {
   /* height: 95vh; */
+  padding: 30px;
+  width: 450px;
   display: flex;
   align-items: center;
   flex-direction: column;
