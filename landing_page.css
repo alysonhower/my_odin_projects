@@ -7,13 +7,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+}
+
+html {
+  font-size: 16px;
+  font-family: 'hemi';
   color: #fe5ab4;
   background-color: #2c3967;
 }
 
-body {
-  font-family: 'hemi';
-  font-size: 18px;
+/* body { */
+  /* font-family: 'hemi'; */
+  /* color: #fe5ab4; */
+  /* background-color: #2c3967; */
+/* } */
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 header {
@@ -41,9 +56,10 @@ nav ol {
 }
 
 .title {
+  text-align: center;
   /* margin: 50px; */
   padding: 50px;
-  font-size: 36px;
+  /* font-size: 36px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,4 +226,55 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 
 
 
+.header {
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+  padding: 20px 10px;
+}
 
+.header a {
+  float: left;
+  color: #fe5ab4;
+  /* background-color: yellow; */
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: #57feff;
+  text-shadow:
+    0 0 1px #57feff,
+    0 0 50px #57feff;
+}
+
+.header a.active {
+  color: #57feff;
+  text-shadow:
+    0 0 1px #57feff,
+    0 0 50px #57feff;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
