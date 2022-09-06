@@ -17,6 +17,122 @@ html {
   background-color: #2c3967;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ /* background-color: teal; */
+ /* color: #fff; */
+}
+.nav-links a {
+ color: #fe5ab4;
+}
+.nav-links a:hover {
+  color: #57feff;
+}
+
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+ margin-top: 5px;
+}
+.menu li:hover {
+ /* background-color: #57feff; */
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+.dropdown {
+ background-color: #2c3967;
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #2c3967;
+}
+.services:hover .dropdown {
+ display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color: #2c3967;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color: #2c3967;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #2c3967;
+}
+}
+
 /* body { */
   /* font-family: 'hemi'; */
   /* color: #fe5ab4; */
@@ -39,12 +155,12 @@ header {
   flex-wrap: wrap;
 }
 
-nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  list-style-type: none;
-}
+/* nav ol { */
+/*   display: flex; */
+/*   flex-wrap: wrap; */
+/*   gap: 30px; */
+/*   list-style-type: none; */
+/* } */
 
 .section {
   padding: 50px;
