@@ -10,11 +10,11 @@ function game() {
     if (computerSelection === playerSelection) {
       console.log(`You chose ${playerSelection}. Computer also chose ${computerSelection}. Tie game!`)
     } else if (computerSelection === 'Scissors' && playerSelection === 'Rock') {
-      console.log('You win! Rock beats Scissors!')
+      console.log('Rock beats Scissors! You win!')
     } else if (computerSelection === 'Rock' && playerSelection === 'Paper') {
-      console.log('You win! Paper beats Rock!')
+      console.log('Paper beats Rock! You win!')
     } else if (computerSelection === 'Paper' && playerSelection === 'Scissors') {
-      console.log('You win! Scissors beats Rock!')
+      console.log('Scissors beats Paper! You win!')
     } else {
       console.log(`Computer chose ${computerSelection}. You chose ${playerSelection}. You loose!`)
     }
